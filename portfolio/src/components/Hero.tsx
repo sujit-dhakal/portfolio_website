@@ -30,7 +30,7 @@ const Hero = () => {
             </a>
           </button>
           <button className="w-[200px] p-2 bg-black text-white border border-solid rounded-[20px] mb-2">
-            Contact Info
+            <a href="#contact">Contact Info</a>
           </button>
         </div>
         <div>

@@ -30,7 +30,7 @@ const About = () => {
           </p>
         </div>
       </div>
-      <div className="text-[20px] text-gray-700">
+      <div className="lg:text-[20px] text-gray-700">
         I'm a Full Stack Developer with 1 year of experience and a Bachelor of
         Science in Computer Science and Information Technology. I specialize in
         building web applications using React, Next.js, Django REST Framework,
