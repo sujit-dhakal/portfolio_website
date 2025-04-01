@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { CiMenuBurger } from "react-icons/ci";
 import { IoMdClose } from "react-icons/io";
 
@@ -8,6 +8,18 @@ const Navbar = () => {
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
   };
+
+  const closeMobileMenu = () => {
+    setIsMobileMenuOpen(false);
+  };
+
+  useEffect(() => {
+    if (isMobileMenuOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+    }
+  }, [isMobileMenuOpen]);
 
   const NAVIGATION_LINKS = [
     {
@@ -50,7 +62,7 @@ const Navbar = () => {
                 {NAVIGATION_LINKS.map((item) => (
                   <li
                     key={item.index}
-                    className="text-[30px] font-[300] text-gray-700"
+                    className="text-[30px] font-[300] text-gray-700 hover:text-gray-400 hover:underline"
                   >
                     <a href={item.to}>{item.name}</a>
                   </li>
@@ -85,9 +97,13 @@ const Navbar = () => {
           </div>
           <div className="flex justify-center items-center text-center">
             {isMobileMenuOpen ? (
-              <ul className="w-full flex flex-col justify-center text-[30px] font-[300] bg-black text-white h-screen">
+              <ul className="w-full flex flex-col justify-center text-[30px] font-[300] bg-black text-white top-13 left-0 fixed h-screen ">
                 {NAVIGATION_LINKS.map((item) => (
-                  <li key={item.index} className="p-8">
+                  <li
+                    key={item.index}
+                    className="p-8 hover:text-gray-400 hover:underline"
+                    onClick={closeMobileMenu}
+                  >
                     <a href={item.to}>{item.name}</a>
                   </li>
                 ))}
