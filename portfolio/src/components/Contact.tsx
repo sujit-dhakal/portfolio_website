@@ -14,7 +14,12 @@ const Contact = () => {
           <div className="mr-2">
             <button className="flex mb-2">
               <IoMail size={30} className="mr-2" />
-              <p className="lg:text-[20px]">sujitramdhakal59@gmail.com</p>
+              <a
+                href="mailto:sujitramdhakal59@gmail.com"
+                className="lg:text-[20px]"
+              >
+                sujitramdhakal59@gmail.com
+              </a>
             </button>
           </div>
           <div className="mr-2">
@@ -32,7 +37,9 @@ const Contact = () => {
           <div>
             <button className="flex">
               <FaPhoneSquare size={30} className="mr-2" />
-              <p className="lg:text-[20px]">+977 9865011999</p>
+              <a href="tel:+9779865011999" className="lg:text-[20px]">
+                +977 9865011999
+              </a>
             </button>
           </div>
         </div>
