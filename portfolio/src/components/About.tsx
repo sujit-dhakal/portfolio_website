@@ -3,7 +3,7 @@ import { MdPeople } from "react-icons/md";
 const About = () => {
   return (
     <div
-      className="mx-auto lg:pt-10 max-w-[70%] mb-[200px] lg:h-screen lg:mb-0"
+      className="mx-auto lg:pt-10 max-w-[70%] mb-[200px] lg:mb-[250px]"
       id="about"
     >
       <div className="text-center mb-30">

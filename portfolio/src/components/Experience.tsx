@@ -110,7 +110,7 @@ const Experience = () => {
   return (
     <div>
       <div
-        className="mx-auto lg:pt-10 max-w-[70%] mb-[200px] lg:h-screen lg:mb-0"
+        className="mx-auto lg:pt-10 max-w-[70%] mb-[200px] lg:mb-[250px]"
         id="experience"
       >
         <div className="text-center mb-20">
