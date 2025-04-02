@@ -16,6 +16,7 @@ import {
   SiGithubactions,
 } from "react-icons/si";
 import { BiLogoPostgresql } from "react-icons/bi";
+
 const Experience = () => {
   const FRONTEND_SKILLS = [
     {
@@ -107,60 +108,80 @@ const Experience = () => {
       icon: <FaAws />,
     },
   ];
+
   return (
-    <div>
-      <div
-        className="mx-auto lg:pt-10 max-w-[70%] mb-[200px] lg:mb-[250px]"
-        id="experience"
-      >
-        <div className="text-center mb-20">
-          <p className="text-gray-700">Explore My</p>
-          <h1 className="text-[30px] lg:text-[50px] font-bold mb-20">
-            Experience
-          </h1>
+    <div
+      id="experience"
+      className="mx-auto lg:pt-10 max-w-[70%] mb-[200px] lg:mb-[250px]"
+    >
+      <div className="text-center mb-16">
+        <p className="text-gray-500 text-xl">Explore My</p>
+        <h1 className="text-4xl lg:text-5xl font-bold text-gray-800">
+          Experience
+        </h1>
+      </div>
+
+      <div className="grid gap-12 lg:grid-cols-3 mx-auto max-w-screen-xl">
+        {/* Frontend Development */}
+        <div className="space-y-6">
+          <h2 className="text-3xl font-semibold text-center text-gray-400">
+            Frontend Development
+          </h2>
+          <div className="grid grid-cols-2 gap-6 lg:grid-cols-3">
+            {FRONTEND_SKILLS.map((skill) => (
+              <div
+                key={skill.id}
+                className="flex flex-col items-center p-6 bg-white rounded-lg shadow-lg transition transform hover:scale-105 hover:shadow-xl"
+              >
+                <div className="text-4xl mb-4">{skill.icon}</div>
+                <h3 className="text-xl font-semibold text-gray-800">
+                  {skill.name}
+                </h3>
+                <p className="text-gray-600">{skill.level}</p>
+              </div>
+            ))}
+          </div>
         </div>
-        <div>
-          <div className="mb-5">
-            <h1 className="text-[20px] text-center lg:text-[30px] font-bold mb-2">
-              Frontend Development
-            </h1>
-            <div className="flex flex-wrap justify-between lg:gap-[120px] border border-solid p-2 rounded-[10px]">
-              {FRONTEND_SKILLS.map((skill) => (
-                <div key={skill.id} className="text-center">
-                  <button>{skill.icon}</button>
-                  <h1 className="text-[20px] font-bold">{skill.name}</h1>
-                  <p className="text-gray-700">{skill.level}</p>
-                </div>
-              ))}
-            </div>
+
+        {/* Backend Development */}
+        <div className="space-y-6">
+          <h2 className="text-3xl font-semibold text-center text-gray-400">
+            Backend Development
+          </h2>
+          <div className="grid grid-cols-2 gap-6 lg:grid-cols-3">
+            {BACKEND_SKILLS.map((skill) => (
+              <div
+                key={skill.id}
+                className="flex flex-col items-center p-6 bg-white rounded-lg shadow-lg transition transform hover:scale-105 hover:shadow-xl"
+              >
+                <div className="text-4xl mb-4">{skill.icon}</div>
+                <h3 className="text-xl font-semibold text-gray-800">
+                  {skill.name}
+                </h3>
+                <p className="text-gray-600">{skill.level}</p>
+              </div>
+            ))}
           </div>
-          <div className="mb-5">
-            <h1 className="text-[20px] text-center lg:text-[30px] font-bold mb-2">
-              Backend Development
-            </h1>
-            <div className="flex flex-wrap justify-between border border-solid p-2 rounded-[10px]">
-              {BACKEND_SKILLS.map((skill) => (
-                <div key={skill.id} className="text-center">
-                  <button>{skill.icon}</button>
-                  <h1 className="text-[20px] font-bold">{skill.name}</h1>
-                  <p className="text-gray-700">{skill.level}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-          <div className="mb-5">
-            <h1 className="text-[20px] text-center lg:text-[30px] font-bold mb-2">
-              Devops and Cloud
-            </h1>
-            <div className="flex flex-wrap justify-between lg:gap-[120px] border border-solid p-2 rounded-[10px]">
-              {DEVOPS_CLOUD_SKILLS.map((skill) => (
-                <div key={skill.id} className="text-center">
-                  <button>{skill.icon}</button>
-                  <h1 className="text-[20px] font-bold">{skill.name}</h1>
-                  <p>{skill.level}</p>
-                </div>
-              ))}
-            </div>
+        </div>
+
+        {/* DevOps and Cloud */}
+        <div className="space-y-6">
+          <h2 className="text-3xl font-semibold text-center text-gray-400">
+            DevOps & Cloud
+          </h2>
+          <div className="grid grid-cols-2 gap-6 lg:grid-cols-3">
+            {DEVOPS_CLOUD_SKILLS.map((skill) => (
+              <div
+                key={skill.id}
+                className="flex flex-col items-center p-6 bg-white rounded-lg shadow-lg transition transform hover:scale-105 hover:shadow-xl"
+              >
+                <div className="text-4xl mb-4">{skill.icon}</div>
+                <h3 className="text-xl font-semibold text-gray-800">
+                  {skill.name}
+                </h3>
+                <p className="text-gray-600">{skill.level}</p>
+              </div>
+            ))}
           </div>
         </div>
       </div>
