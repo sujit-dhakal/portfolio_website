@@ -26,8 +26,8 @@ const Hero = () => {
         <div className="flex flex-col items-center lg:flex-row lg:justify-between">
           <button className="mb-2 w-[200px] p-2 border border-solid rounded-[20px] hover:text-white hover:bg-black">
             <a
-              href="SujitRamDhakal__Resume.pdf"
-              download="SujitRamDhakal__Resume.pdf"
+              href="SujitRamDhakal___Resume.pdf"
+              download="SujitRamDhakal___Resume.pdf"
             >
               Download CV
             </a>
