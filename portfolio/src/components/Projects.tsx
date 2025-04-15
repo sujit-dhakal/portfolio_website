@@ -9,7 +9,7 @@ const Projects = () => {
         <h1 className="text-[30px] lg:text-[50px] font-bold">Projects</h1>
       </div>
       <div className="flex flex-col lg:flex-row justify-between items-center lg:mx-[100px] mb-20">
-        <div className="w-[200px] lg:w-[400px] border border-solid rounded-[30px] p-4 text-center mb-10 lg:mb-0">
+        <div className="w-[200px] lg:w-[500px] border border-solid rounded-[30px] p-4 text-center mb-10 lg:mb-0">
           <img
             src="ecommerce.jpg"
             alt="Ecommerce"
@@ -24,7 +24,7 @@ const Projects = () => {
             </a>
           </button>
         </div>
-        <div className="w-[200px] lg:w-[400px] border border-solid rounded-[30px] p-4 text-center">
+        <div className="w-[200px] lg:w-[500px] border border-solid rounded-[30px] p-4 text-center">
           <img src="chatbot.png" alt="Chatbot" className="mb-2 lg:h-[300px]" />
           <h1 className="text-[30px] font-bold mb-2">Chatbot</h1>
           <button className="text-gray-700 border border-solid rounded-[20px] py-4 px-8 hover:text-white hover:bg-black">
